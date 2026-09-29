@@ -5,3 +5,9 @@ function addMessage(message) {
 }
 
 module.exports = { messages, addMessage };
+
+function listMessages() {
+  return [...messages];
+}
+
+module.exports.listMessages = listMessages;
